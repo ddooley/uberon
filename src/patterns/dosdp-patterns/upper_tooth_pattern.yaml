@@ -31,6 +31,7 @@ classes:
 
 relations:
   part_of: 'BFO:0000050'
+  member_of: 'RO:0002350'
 
 annotationProperties:
   exact_synonym: oio:hasExactSynonym
@@ -79,7 +80,7 @@ annotations:
       - your_syn
 
 equivalentTo:
-  text: "%s and ('part_of' some %s) and ('part_of' some %s)"
+  text: "%s and ('part_of' some %s) and ('member_of' some %s)"
   # molar tooth 1 and ('part of' some 'maxilla') and ('part of' some 'secondary dentition')
   vars:
     - tooth
