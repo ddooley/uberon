@@ -19,20 +19,18 @@ contributors:
   - https://orcid.org/0000-0002-7073-9172  # David Osumi-Sutherland
 
 # upper teeth
-pattern_name: upper_tooth
-pattern_iri: http://purl.obolibrary.org/obo/uberon/patterns/upper_tooth.yaml
+pattern_name: tooth_dentition
+pattern_iri: http://purl.obolibrary.org/obo/uberon/patterns/tooth_dentition.yaml
 
-description: "This defines an upper tooth."
+description: "This defines a tooth dentition."
 
 classes:
-  bone_of_jaw: 'UBERON:0012360'  # Add ID for bone
   calcareous_tooth: 'UBERON:0001091'
-  upper_jaw_region: 'UBERON:0001709'
+  dentition: 'UBERON:0003672'
   ncbi_taxon: 'NCBITaxon:2759'
 
 relations:
-  part_of: 'BFO:0000050'
-  attach_to: 'RO:0002371'
+  member_of: 'RO:0002350'
 
 annotationProperties:
   exact_synonym: oio:hasExactSynonym
@@ -42,39 +40,38 @@ annotationProperties:
   in_taxon: 'RO:0002160' #only_in_taxon
 
 vars:
-  jaw_bone: 'bone_of_jaw' #USE UPPER/LOWER BECAUSE OF https://docs.google.com/document/d/1XvMbNvr0FEsdqGhg79BYCYEHSqUxRHMcvhbGizEAht8/edit
-  #use attach to some bone rather than part of some bone
-  #need to check if Are where the teeth are found universal? (i.e., is the incisor always in the premaxilla?)
-  # premaxilla UBERON_0002244
-  # maxilla UBERON:0002397
-  upper_jaw: 'upper_jaw_region'
-  # UBERON:0001709
-  tooth_parent: 'calcareous_tooth'
+  tooth: 'calcareous tooth'
   # incisor UBERON_0001098
   # canine UBERON:0003674
   # molar UBERON:0003655
   # premolar UBERON:0007120
-  tooth: 'calcareous_tooth'
-  number: "xsd:string"
+  dentition: 'dentition_type'
+  # primary dentition UBERON:0007116
+  # secondary dentition UBERON:0007774
+  type: 'xsd:string'
   your_syn: "xsd:string"
+  abb_syn: "xsd:string"
   human_syn: "xsd:string"
 
 data_list_vars:
   xrefs: "'xref'"  # separate multiple entries by "|"
+  syn_property: "syn_property"
+  syn_type: "syn_property"
+  taxon: "in_taxon"
 
 name:
-  text: "upper %s %s"
-    # upper first molar tooth
+  text: "%s %s"
+    # secondary upper first molar tooth
   vars:
-    - number # first
-    - tooth_parent # molar tooth UBERON:0003655
+    - type # secondary
+    - tooth # upper first molar tooth UBERON:0018302
 
 def:
-  text: "A %s that is part of an upper jaw and attaches to a %s"
-  # A molar tooth 1 that is part of an upper jaw and attachs to a maxilla"
+  text: "A %s that is a member of some %s"
+  # A upper molar tooth 1 that is part of some secondary dentition"
   vars:
-    - tooth # molar tooth 1 UBERON:0018376
-    - jaw_bone # maxilla UBERON:0002397
+    - tooth # upper first molar tooth UBERON:0018302
+    - dentition # secondary dentition UBERON:0007774
   annotations:
     - annotationProperty: xref
       value: xrefs
@@ -85,11 +82,18 @@ annotations:
     text: "%s"
     vars:
       - your_syn
- - annotationProperty: taxon
+  - annotationProperty: exact_synonym
+    text: "%s"
+    vars:
+      - abb_syn
+    annotations:
+      annotationProperty: exact_synonym
+      value: syn_type #abbreviation
+  - annotationProperty: taxon
     text: "%s"
     vars:
       - ncbi_taxon
- - annotationProperty: human_synonym
+  - annotationProperty: exact_synonym
     text: "%s"
     vars:
       - human_syn
@@ -98,9 +102,8 @@ annotations:
       value: syn_type #preferred term when talking about an instance of this class in Homo sapiens
 
 equivalentTo:
-  text: "%s and ('part_of' some %s) and ('attaches to' some %s)"
-  # molar tooth 1 and ('part of' some 'upper jaw region') and ('attaches to' some maxilla)
+  text: "%s and ('member_of' some %s)"
+  # upper first molar tooth and ('member of' some 'secondary dentition')
   vars:
-    - tooth # molar tooth 1 UBERON:0018376
-    - upper_jaw # upper jaw region UBERON:0001709
-    - jaw_bone # maxilla UBERON:0002397
+    - tooth # upper first molar tooth UBERON:0018302
+    - dentition # secondary dentition UBERON:0007774

@@ -1,0 +1,49 @@
+	IRI	term	tooth IRI	tooth	dentition IRI	dentition	your_syn	abb_syn	syn_type	hum_syn	syn_type	xrefs	ncbi_taxon_IRI	ncbi_taxon
+	UBERON:0018593	primary upper first incisor tooth	UBERON:0018603	upper first incisor tooth	UBERON:0007116	primary dentition		dI1	abbreviation	primary upper central incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+	UBERON:0018594	primary upper second incisor tooth	UBERON:0018604	upper second incisor tooth	UBERON:0007116	primary dentition		dI2	abbreviation	primary upper lateral incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+		primary upper third incisor tooth		upper third incisor tooth	UBERON:0007116	primary dentition		dI3	abbreviation					
+		primary upper fourth incisor tooth		upper fourth incisor tooth	UBERON:0007116	primary dentition		dI4	abbreviation				NCBITaxon:9263	Metatheria
+		primary upper fifth incisor tooth		upper fifth incisor tooth	UBERON:0007116	primary dentition		dI5	abbreviation				NCBITaxon:9263	Metatheria
+	UBERON:0016454	secondary upper first incisor tooth	UBERON:0018603	upper first incisor tooth	UBERON:0007774	secondary dentition		I1	abbreviation	secondary upper central incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+	UBERON:0016455	secondary upper second incisor tooth	UBERON:0018604	upper second incisor tooth	UBERON:0007774	secondary dentition		I2	abbreviation	secondary upper lateral incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+		secondary upper first incisor tooth		upper third incisor tooth	UBERON:0007774	secondary dentition		I3	abbreviation					
+		secondary upper fourth incisor tooth		upper fourth incisor tooth	UBERON:0007774	secondary dentition		I4	abbreviation				NCBITaxon:9263	Metatheria
+		secondary upper fifth incisor tooth		upper fifth incisor tooth	UBERON:0007774	secondary dentition		I5	abbreviation				NCBITaxon:9263	Metatheria
+	UBERON:0018597	primary upper canine tooth	UBERON:0018621	upper canine tooth	UBERON:0007116	primary dentition		dC	abbreviation					
+	UBERON:0018561	secondary upper canine tooth	UBERON:0018621	upper canine tooth	UBERON:0007774	secondary dentition		C	abbreviation					
+		primary upper first premolar tooth		upper first premolar tooth	UBERON:0007116	primary dentition		dP1	abbreviation					
+		primary upper second premolar tooth		upper second premolar tooth	UBERON:0007116	primary dentition		dP2	abbreviation					
+		primary upper third premolar tooth		upper third premolar tooth	UBERON:0007116	primary dentition		dP3	abbreviation					
+		primary upper fourth premolar tooth	UBERON:0018648	upper fourth premolar tooth	UBERON:0007116	primary dentition		dP4	abbreviation				NCBITaxon:9347	Eutheria
+	UBERON:0018571	secondary upper first premolar tooth		upper first premolar tooth	UBERON:0007774	secondary dentition		P1	abbreviation					
+	UBERON:0018572	secondary upper second premolar tooth		upper second premolar tooth	UBERON:0007774	secondary dentition		P2	abbreviation					
+	UBERON:7500059	secondary upper third premolar tooth		upper third premolar tooth	UBERON:0007774	secondary dentition		P3	abbreviation					
+	UBERON:7500058	secondary upper fourth premolar tooth	UBERON:0018648	upper fourth premolar tooth	UBERON:0007774	secondary dentition		P4	abbreviation				NCBITaxon:9347	Eutheria
+	UBERON:0018575	secondary upper first molar tooth		upper first molar tooth	UBERON:0007774	secondary dentition		M1	abbreviation					
+	UBERON:0018576	secondary upper first molar tooth		upper second molar tooth	UBERON:0007774	secondary dentition		M2	abbreviation					
+	UBERON:0018577	secondary upper third molar tooth		upper third molar tooth	UBERON:0007774	secondary dentition		M3	abbreviation					
+	UBERON:7500057	secondary upper fourth molar tooth		upper fourth molar tooth	UBERON:0007774	secondary dentition		M4	abbreviation				NCBITaxon:9263	Metatheria
+	UBERON:0018595	primary lower first incisor tooth	UBERON:0018601	lower first incisor tooth	UBERON:0007116	primary dentition		di1	abbreviation	primary lower central incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+	UBERON:0018596	primary lower second incisor tooth	UBERON:0018602	lower second incisor tooth	UBERON:0007116	primary dentition		di2	abbreviation	primary lower lateral incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+		primary lower third incisor tooth		lower third incisor tooth	UBERON:0007116	primary dentition		di3	abbreviation					
+		primary lower fourth incisor tooth		lower fourth incisor tooth	UBERON:0007116	primary dentition		di4	abbreviation				NCBITaxon:9347	Eutheria
+		primary lower fifth incisor tooth		lower fifth incisor tooth	UBERON:0007116	primary dentition		di5	abbreviation					
+	UBERON:0018568	secondary lower first incisor tooth	UBERON:0018601	lower first incisor tooth	UBERON:0007774	secondary dentition		i1	abbreviation	secondary lower central incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+	UBERON:0018570	secondary lower second incisor tooth	UBERON:0018602	lower second incisor tooth	UBERON:0007774	secondary dentition		i2	abbreviation	secondary lower lateral incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+		secondary lower first incisor tooth		lower third incisor tooth	UBERON:0007774	secondary dentition		i3	abbreviation					
+		secondary lower fourth incisor tooth		lower fourth incisor tooth	UBERON:0007774	secondary dentition		i4	abbreviation					
+		secondary lower fifth incisor tooth		lower fifth incisor tooth	UBERON:0007774	secondary dentition		i5	abbreviation					
+	UBERON:0018598	primary lower canine tooth	UBERON:0018622	lower canine tooth	UBERON:0007116	primary dentition		dc	abbreviation					
+	UBERON:0018562	secondary lower canine tooth	UBERON:0018622	lower canine tooth	UBERON:0007774	secondary dentition		c	abbreviation					
+		primary lower first premolar tooth	UBERON:0018284	lower first premolar tooth	UBERON:0007116	primary dentition		dp1	abbreviation					
+		primary lower second premolar tooth	UBERON:0018285	lower second premolar tooth	UBERON:0007116	primary dentition		dp2	abbreviation					
+		primary lower third premolar tooth		lower third premolar tooth	UBERON:0007116	primary dentition		dp3	abbreviation					
+		primary lower fourth premolar tooth		lower fourth premolar tooth	UBERON:0007116	primary dentition		dp4	abbreviation					
+	UBERON:0018573	secondary lower first premolar tooth	UBERON:0018284	lower first premolar tooth	UBERON:0007774	secondary dentition		p1	abbreviation					
+	UBERON:0018574	secondary lower second premolar tooth	UBERON:0018285	lower second premolar tooth	UBERON:0007774	secondary dentition		p2	abbreviation					
+	UBERON:7500054	secondary lower third premolar tooth		lower third premolar tooth	UBERON:0007774	secondary dentition		p3	abbreviation					
+	UBERON:7500053	secondary lower fourth premolar tooth		lower fourth premolar tooth	UBERON:0007774	secondary dentition		p4	abbreviation				NCBITaxon:9347	Eutheria
+	UBERON:0018578	secondary lower first molar tooth		lower first molar tooth	UBERON:0007774	secondary dentition		m1	abbreviation					
+	UBERON:0018579	secondary lower second molar tooth		lower second molar tooth	UBERON:0007774	secondary dentition		m2	abbreviation					
+	UBERON:0018580	secondary lower third molar tooth		lower third molar tooth	UBERON:0007774	secondary dentition		m3	abbreviation					
+	UBERON:7500052	secondary lower fourth molar tooth		lower fourth molar tooth	UBERON:0007774	secondary dentition		m4	abbreviation				NCBITaxon:9263	Metatheria

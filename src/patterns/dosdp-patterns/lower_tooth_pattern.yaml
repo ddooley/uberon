@@ -19,52 +19,61 @@ contributors:
 
 
 # lower teeth
-pattern_name: lower_teeth
-pattern_iri: http://purl.obolibrary.org/obo/uberon/patterns/lower_teeth.yaml
+pattern_name: lower_tooth
+pattern_iri: http://purl.obolibrary.org/obo/uberon/patterns/lower_tooth.yaml
 
-description: "This defines lower teeth."
+description: "This defines a lower tooth."
 
 classes:
   bone_of_jaw: 'UBERON:0012360'  # Add ID for bone
-  dentition_type: 'UBERON:0003672'
   calcareous_tooth: 'UBERON:0001091'
+  lower_jaw_region: 'UBERON:0001710'
+  ncbi_taxon: 'NCBITaxon:2759'
 
 relations:
   part_of: 'BFO:0000050'
+  attach_to: 'RO:0002371'
 
 annotationProperties:
   exact_synonym: oio:hasExactSynonym
   xref: oio:hasDbXref
+  syn_property: oio:synonym_type_property
+  syn_type: oio:synonym_type_property
+  in_taxon: 'RO:0002160' #only_in_taxon
 
 vars:
-  jaw: 'bone_of_jaw'
+  jaw_bone: 'bone_of_jaw' #USE UPPER/LOWER BECAUSE OF https://docs.google.com/document/d/1XvMbNvr0FEsdqGhg79BYCYEHSqUxRHMcvhbGizEAht8/edit
+  #use attach to some bone rather than part of some bone
+  #need to check if Are where the teeth are found universal? (i.e., is the incisor always in the premaxilla?)
   # mandible UBERON:0001684
-  dentition: 'dentition_type'
-  # primary UBERON:0007116
-  # secondary UBERON:0007774
-  tooth: 'calcareous_tooth'
+  lower_jaw: 'lower_jaw_region'
+  # UBERON:0001710
+  tooth_parent: 'calcareous_tooth'
   # incisor UBERON_0001098
   # canine UBERON:0003674
   # molar UBERON:0003655
   # premolar UBERON:0007120
+  tooth: 'calcareous_tooth'
+  number: "xsd:string"
   your_syn: "xsd:string"
+  human_syn: "xsd:string"
 
 data_list_vars:
-  xrefs: "'xref'"  # separate multiple entries by "|"
+  xrefs: "xref"  # separate multiple entries by "|"
 
 name:
-  text: "%s lower %s"
-    # secondary lower first molar tooth
+  text: "lower %s %s"
+    # lower first molar tooth
   vars:
-    - dentition
-    - tooth
+    - number # first
+    - tooth # molar tooth UBERON:0003655
 
 def:
-  text: "A %s %s that is part of a lower jaw region."
-  # A secondary dentition molar tooth 1 that is part of a lower jaw region
+  text: "A %s that is part of a lower jaw and attaches to %s."
+  # A molar tooth 1 that is part of a lower jaw region
   vars:
-    - dentition
-    - tooth
+    - tooth # molar tooth 1 UBERON:0018376
+    - jaw_bone # mandible UBERON:0001684
   annotations:
     - annotationProperty: xref
       value: xrefs
@@ -75,11 +84,22 @@ annotations:
     text: "%s"
     vars:
       - your_syn
+ - annotationProperty: taxon
+    text: "%s"
+    vars:
+      - ncbi_taxon
+ - annotationProperty: exact_synonym
+    text: "%s"
+    vars:
+      - human_syn
+    annotations:
+      annotationProperty: syn_property
+      value: syn_type #preferred term when talking about an instance of this class in Homo sapiens
 
 equivalentTo:
-  text: "%s and ('part_of' some %s) and ('part_of' some %s)"
-  # molar tooth 1 and ('part of' some 'mandible') and ('part of' some 'secondary dentition')
+  text: "%s and ('part_of' some %s) and ('attaches to' some %s)"
+  # molar tooth 1 and ('part of' some 'lower jaw region') and ('attaches to' some mandible)
   vars:
-    - tooth
-    - jaw
-    - dentition
+    - tooth # molar tooth 1 UBERON:0018376
+    - lower_jaw # lower jaw region UBERON:0001710
+    - jaw_bone # mandible UBERON:0001684

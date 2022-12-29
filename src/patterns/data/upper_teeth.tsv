@@ -1,0 +1,15 @@
+	IRI	label	jaw_bone IRI	jaw_bone	upper_jaw IRI	upper_jaw	tooth_parent IRI	tooth_parent	tooth IRI	tooth	number	your_syn	hum_syn	syn_type	xrefs	ncbi_taxon_IRI	ncbi_taxon
+	UBERON:0018302	upper molar tooth 1	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0003655	molar tooth	UBERON:0018376	molar tooth 1	first						
+		upper molar tooth 2	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0003655	molar tooth	UBERON:0018606	molar tooth 2	second						
+		upper molar tooth 3	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0003655	molar tooth	UBERON:0018377	molar tooth 3	third						
+		upper molar tooth 4	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0003655	molar tooth	UBERON:7500055	molar tooth 4	fourth					NCBITaxon:9263	Metatheria
+		upper premolar tooth 1	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0007120	premolar tooth	UBERON:0018294	premolar tooth 1	first						
+		upper premolar tooth 2	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0007120	premolar tooth	UBERON:0018640	premolar tooth 2	second						
+		upper premolar tooth 3	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0007120	premolar tooth	UBERON:7500056	premolar tooth 3	third						
+	UBERON:0018648	upper premolar tooth 4	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0007120	premolar tooth	UBERON:0018647	premolar tooth 4	fourth					NCBITaxon:9347	Eutheria
+	UBERON:0018603	upper central incisor tooth	UBERON:0002244	premaxilla	UBERON:0001709	upper  jaw region	UBEORN:0001098	incisor tooth	UBERON:0018551	incisor tooth 1	first		upper central incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+	UBERON:0018604	upper lateral incisor tooth	UBERON:0002244	premaxilla	UBERON:0001709	upper  jaw region	UBEORN:0001098	incisor tooth	UBERON:0018551	incisor tooth 2	second		upper lateral incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+		upper incisor tooth 3	UBERON:0002244	premaxilla	UBERON:0001709	upper  jaw region	UBEORN:0001098	incisor tooth	UBERON:0018551	incisor tooth 3	third						
+		upper incisor tooth 4	UBERON:0002244	premaxilla	UBERON:0001709	upper  jaw region	UBEORN:0001098	incisor tooth	UBERON:0018551	incisor tooth 4	fourth					NCBITaxon:9263	Metatheria
+		upper incisor tooth 5		premaxilla	UBERON:0001709	upper  jaw region	UBEORN:0001098	incisor tooth	UBERON:0018551	incisor tooth 5	fifth					NCBITaxon:9263	Metatheria
+	UBERON:0018621	upper canine tooth	UBERON:0002397	maxilla	UBERON:0001709	upper  jaw region	UBERON:0003674	cuspid	UBERON:0003674	cuspid							

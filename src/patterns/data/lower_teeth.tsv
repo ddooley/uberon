@@ -1,0 +1,15 @@
+	IRI	label	jaw_bone IRI	jaw_bone	lower_jaw IRI	lower_jaw	tooth_parent IRI	tooth_parent	tooth IRI	tooth	number	your_syn	hum_syn	syn_type	xrefs	ncbi_taxon_IRI	ncbi_taxon
+		lower molar tooth 1	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	molar tooth	UBERON:0018376	molar tooth 1	first	1						
+		lower molar tooth 2	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	molar tooth	UBERON:0018606	molar tooth 2	second	2						
+	UBERON:0018282	lower molar tooth 3	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	molar tooth	UBERON:0018377	molar tooth 3	third	3						
+		lower molar tooth 4	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	molar tooth	UBERON:7500055	molar tooth 4	fourth	4					NCBITaxon:9263	Metatheria
+	UBERON:0018284	lower premolar tooth 1	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	premolar tooth	UBERON:0018294	premolar tooth 1	first	1						
+	UBERON:0018285	lower premolar tooth 2	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	premolar tooth	UBERON:0018640	premolar tooth 2	second	2						
+		lower premolar tooth 3	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	premolar tooth	UBERON:7500056	premolar tooth 3	third	3						
+		lower premolar tooth 4	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	premolar tooth	UBERON:0018647	premolar tooth 4	fourth	4					NCBITaxon:9347	Eutheria
+	UBERON:0018601	lower central incisor tooth	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	incisor tooth	UBERON:0018551	incisor tooth 1	first	1		lower central incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+	UBERON:0018602	lower lateral incisor tooth	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	incisor tooth	UBERON:0018551	incisor tooth 2	second	2		lower lateral incisor tooth	preferred term when talking about an instance of this class in Homo sapiens			
+		lower incisor tooth 3	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	incisor tooth	UBERON:0018551	incisor tooth 3	third	3						
+		lower incisor tooth 4	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	incisor tooth	UBERON:0018551	incisor tooth 4	fourth	4					NCBITaxon:9263	Metatheria
+		lower incisor tooth 5	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	incisor tooth	UBERON:0018551	incisor tooth 5	fifth	5					NCBITaxon:9263	Metatheria
+	UBERON:0018622	lower canine tooth	UBERON:0001684	mandible	UBERON:0001710	lower_jaw_region	cuspid	UBERON:0003674	cuspid								
