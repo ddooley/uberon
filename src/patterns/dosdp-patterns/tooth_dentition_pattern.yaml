@@ -25,36 +25,36 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/patterns/tooth_dentition.yaml
 description: "This defines a tooth dentition."
 
 classes:
-  calcareous_tooth: 'UBERON:0001091'
-  dentition: 'UBERON:0003672'
-  ncbi_taxon: 'NCBITaxon:2759'
+  calcareous_tooth: "UBERON:0001091"
+  dentition: "UBERON:0003672"
+  ncbi_taxon: "NCBITaxon:2759"
 
 relations:
-  member_of: 'RO:0002350'
+  member_of: "RO:0002350"
 
 annotationProperties:
   exact_synonym: oio:hasExactSynonym
   xref: oio:hasDbXref
   syn_property: oio:synonym_type_property
   syn_type: oio:synonym_type_property
-  in_taxon: 'RO:0002160' #only_in_taxon
+  in_taxon: "RO:0002160" #only_in_taxon
 
 vars:
-  tooth: 'calcareous tooth'
+  tooth: "calcareous tooth"
   # incisor UBERON_0001098
   # canine UBERON:0003674
   # molar UBERON:0003655
   # premolar UBERON:0007120
-  dentition: 'dentition_type'
+  dentition: "dentition_type"
   # primary dentition UBERON:0007116
   # secondary dentition UBERON:0007774
-  type: 'xsd:string'
+  type: "xsd:string"
   your_syn: "xsd:string"
   abb_syn: "xsd:string"
   human_syn: "xsd:string"
 
 data_list_vars:
-  xrefs: "'xref'"  # separate multiple entries by "|"
+  xrefs: "xref"  # separate multiple entries by "|"
   syn_property: "syn_property"
   syn_type: "syn_property"
   taxon: "in_taxon"
@@ -63,7 +63,7 @@ name:
   text: "%s %s"
     # secondary upper first molar tooth
   vars:
-    - type # secondary
+    - type # secondary (not using UBERON term because don't want to add "secondary dentition")
     - tooth # upper first molar tooth UBERON:0018302
 
 def:
@@ -87,7 +87,7 @@ annotations:
     vars:
       - abb_syn
     annotations:
-      annotationProperty: exact_synonym
+      annotationProperty: syn_property
       value: syn_type #abbreviation
   - annotationProperty: taxon
     text: "%s"

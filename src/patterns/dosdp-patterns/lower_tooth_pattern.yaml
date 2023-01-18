@@ -25,35 +25,35 @@ pattern_iri: http://purl.obolibrary.org/obo/uberon/patterns/lower_tooth.yaml
 description: "This defines a lower tooth."
 
 classes:
-  bone_of_jaw: 'UBERON:0012360'  # Add ID for bone
-  calcareous_tooth: 'UBERON:0001091'
-  lower_jaw_region: 'UBERON:0001710'
-  ncbi_taxon: 'NCBITaxon:2759'
+  bone_of_jaw: "UBERON:0012360"  # Add ID for bone
+  calcareous_tooth: "UBERON:0001091"
+  lower_jaw_region: "UBERON:0001710"
+  ncbi_taxon: "NCBITaxon:2759"
 
 relations:
-  part_of: 'BFO:0000050'
-  attach_to: 'RO:0002371'
+  part_of: "BFO:0000050"
+  attach_to: "RO:0002371"
 
 annotationProperties:
   exact_synonym: oio:hasExactSynonym
   xref: oio:hasDbXref
   syn_property: oio:synonym_type_property
   syn_type: oio:synonym_type_property
-  in_taxon: 'RO:0002160' #only_in_taxon
+  in_taxon: "RO:0002160" #only_in_taxon
 
 vars:
-  jaw_bone: 'bone_of_jaw' #USE UPPER/LOWER BECAUSE OF https://docs.google.com/document/d/1XvMbNvr0FEsdqGhg79BYCYEHSqUxRHMcvhbGizEAht8/edit
+  jaw_bone: "bone_of_jaw" #USE UPPER/LOWER BECAUSE OF https://docs.google.com/document/d/1XvMbNvr0FEsdqGhg79BYCYEHSqUxRHMcvhbGizEAht8/edit
   #use attach to some bone rather than part of some bone
   #need to check if Are where the teeth are found universal? (i.e., is the incisor always in the premaxilla?)
   # mandible UBERON:0001684
-  lower_jaw: 'lower_jaw_region'
+  lower_jaw: "lower_jaw_region"
   # UBERON:0001710
-  tooth_parent: 'calcareous_tooth'
+  tooth_parent: "calcareous_tooth"
   # incisor UBERON_0001098
   # canine UBERON:0003674
   # molar UBERON:0003655
   # premolar UBERON:0007120
-  tooth: 'calcareous_tooth'
+  tooth: "calcareous_tooth"
   number: "xsd:string"
   your_syn: "xsd:string"
   human_syn: "xsd:string"
@@ -65,7 +65,7 @@ name:
   text: "lower %s %s"
     # lower first molar tooth
   vars:
-    - number # first
+    - number # first (need to spell out, so can't use UBERON molar tooth 1)
     - tooth # molar tooth UBERON:0003655
 
 def:
